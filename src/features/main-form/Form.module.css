@@ -22,6 +22,8 @@
   flex-direction: row;
   margin: auto;
   width: fit-content;
+  margin-left: 0;
+  gap: 10px;
 }
 
 .interventionCodes {
@@ -48,4 +50,8 @@
   flex: 1;
   height: 30vh;
   overflow: scroll;
+}
+
+h2 {
+  margin-right: auto;
 }
