@@ -121,7 +121,6 @@ export function MonitoringSection() {
             renderInput={(params) => <TextField {...params} label={"Manchester Area"} />}
         />
         <CountrySelect />
-
       </div>
     </div>
   );
