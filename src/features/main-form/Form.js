@@ -6,6 +6,8 @@ import { MonitoringSection } from "./MonitoringSections";
 
 export function MainForm({ users, setusers }) {
   const [interventionCodes, setInterventionCodes] = useState([]);
+  const [itemCount, setItemCount] = useState(0);
+  const [amount, setAmounts] = useState([]);
 
   const drop_in = [
     { code: "B1", info: "General advice & support" },
@@ -50,6 +52,12 @@ export function MainForm({ users, setusers }) {
     return false;
   };
 
+  const addItem = (e) => {
+    const item = { item: e.tagret.value, amount: 0 };
+
+    ///  setItems([...items], item);
+  };
+
   const setCodes = (e) => {
     const option = e.target.value;
     if (option === "drop_in") {
@@ -75,23 +83,47 @@ export function MainForm({ users, setusers }) {
           <TextField
             variant="outlined"
             fullWidth
+            rows={3}
+            multiline
             onChange={(e) => handleChange(e)}
           ></TextField>
         </div>
 
         <MonitoringSection />
 
-        {/* <div className={styles.container}>
+        <div className={styles.container}>
           <h2>Consumables</h2>
           <div className={styles.options_container}>
-            <Button variant="contained">Option 1</Button>
-            <Button variant="contained">Option 2</Button>
-            <Button variant="contained">Option 3</Button>
-            <Button variant="contained">Option 4</Button>
-            <Button variant="contained">Option 5</Button>
-            <Button variant="contained">Option 6</Button>
+            <div className={styles.item_counter}>
+              <Button variant="contained" onClick={(e) => addItem()}>
+                +
+              </Button>
+              <p>Option</p>
+              <Button variant="contained">-</Button>
+            </div>
+            <div className={styles.item_counter}>
+              <Button variant="contained" onClick={(e) => addItem()}>
+                +
+              </Button>
+              <p>Option </p>
+              <Button variant="contained">-</Button>
+            </div>
+            <div className={styles.item_counter}>
+              <Button variant="contained" onClick={(e) => addItem()}>
+                +
+              </Button>
+              <p>Option </p>
+              <Button variant="contained">-</Button>
+            </div>
+            <div className={styles.item_counter}>
+              <Button variant="contained" onClick={(e) => addItem()}>
+                +
+              </Button>
+              <p>Option </p>
+              <Button variant="contained">-</Button>
+            </div>
           </div>
-        </div> */}
+        </div>
 
         <div className={styles.container}>
           <h2>Intervention Codes</h2>
