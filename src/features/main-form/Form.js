@@ -76,14 +76,12 @@ export function MainForm({ users, setusers }) {
             variant="outlined"
             fullWidth
             onChange={(e) => handleChange(e)}
-          >
-            THIS WILL BE TEXT AREA
-          </TextField>
+          ></TextField>
         </div>
 
         <MonitoringSection />
 
-        <div className={styles.container}>
+        {/* <div className={styles.container}>
           <h2>Consumables</h2>
           <div className={styles.options_container}>
             <Button variant="contained">Option 1</Button>
@@ -93,7 +91,7 @@ export function MainForm({ users, setusers }) {
             <Button variant="contained">Option 5</Button>
             <Button variant="contained">Option 6</Button>
           </div>
-        </div>
+        </div> */}
 
         <div className={styles.container}>
           <h2>Intervention Codes</h2>

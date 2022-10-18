@@ -35,11 +35,10 @@
 .interventionOptions {
   gap: 5px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   flex: 1;
   overflow: scroll;
-  height: 30vh;
 }
 
 .interventionItems {
@@ -48,10 +47,14 @@
   grid-template-columns: 1fr 1fr;
   gap: 5px;
   flex: 1;
-  height: 30vh;
+
   overflow: scroll;
 }
 
 h2 {
   margin-right: auto;
+}
+
+button {
+  line-height: 1rem !important;
 }
