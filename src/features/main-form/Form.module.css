@@ -1,0 +1,15 @@
+.form {
+  width: 100%;
+  height: 100vh;
+  background: blue;
+  display: flex;
+  flex-direction: column;
+}
+
+.consumables {
+  width: 100%;
+  background: green;
+  flex: flex;
+  flex-direction: row;
+  height: 15vh;
+}

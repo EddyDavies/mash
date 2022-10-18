@@ -1,20 +1,17 @@
-import React, { useState } from 'react';
-
-import { useAppSelector, useAppDispatch } from '../../app/hooks';
-
 import styles from './UserBar.module.css';
 
 export function UserBar() {
-  const dispatch = useAppDispatch();
-  const [incrementAmount, setIncrementAmount] = useState('2');
 
-  const incrementValue = Number(incrementAmount) || 0;
 
   return (
-    <div>
-      <div className={styles.row}>
-            <p> Test </p>
+      <div className={styles.userbar}>
+           <h1>Users</h1>
+           <ul>
+            <li>user 1</li>
+            <li>user 2</li>
+            <li>user 3</li>
+            <li>user 4</li>
+           </ul>
       </div>
-    </div>
   );
 }
