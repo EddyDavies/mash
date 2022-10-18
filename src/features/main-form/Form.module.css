@@ -23,3 +23,16 @@
   margin: auto;
   width: fit-content;
 }
+
+.interventionCodes {
+  border: solid 5px red;
+  display: flex;
+  flex-direction: row;
+}
+
+.interventionOptions {
+  border: solid 2px blue;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
