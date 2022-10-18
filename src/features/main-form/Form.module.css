@@ -24,6 +24,7 @@
   width: fit-content;
   margin-left: 0;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .interventionCodes {
