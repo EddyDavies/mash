@@ -1,26 +1,16 @@
 import styles from "./Form.module.css";
 
-import {
-  FormControlLabel,
-  TextField,
-  Button,
-  RadioGroup,
-  Radio,
-  Select,
-  MenuItem,
-  InputLabel,
-} from "@mui/material";
+import { TextField, Button } from "@mui/material";
+import { MonitoringSection } from "./MonitoringSections";
 
-export function MainForm(users, setUsers) {
+export function MainForm({ users, setusers }) {
   const handleSubmit = () => {
     return false;
   };
 
   const handleChange = (e, key) => {
     const input = e.target.value;
-
     // const user = users.filter()
-
     // user.key = input;
   };
 
@@ -38,26 +28,7 @@ export function MainForm(users, setUsers) {
           </TextField>
         </div>
 
-        <div className={styles.container}>
-          <h2>Monitoring Form</h2>
-
-          <div className={styles.options_container}>
-            <TextField variant="outlined" label="area" />
-
-            <Select variant="outlined" label="accom">
-              <MenuItem>NFA</MenuItem>
-              <MenuItem>Soft Surfing</MenuItem>
-              <MenuItem>ABEN</MenuItem>
-              <MenuItem>Private Rented</MenuItem>
-              <MenuItem>Housing Assoc</MenuItem>
-            </Select>
-
-            <TextField variant="outlined" label="Type of sex work" />
-            <TextField variant="outlined" label="Nationality" />
-            <TextField variant="outlined" label="Ethnicity" />
-            <TextField variant="outlined" label="Gender" />
-          </div>
-        </div>
+        <MonitoringSection />
 
         <div className={styles.container}>
           <h2>Consumables</h2>
@@ -74,9 +45,11 @@ export function MainForm(users, setUsers) {
         <div className={styles.container}>
           <h2>Intervention Codes</h2>
 
-          <div className={styles.interventionCodes}>
+          {/* <div className={styles.interventionCodes}>
             <div className={styles.interventionOptions}>
-              <Button variant="contained">Drop In</Button>
+              <Button variant="contained" size="small">
+                Drop In
+              </Button>
               <Button variant="contained">Groups Shared</Button>
               <Button variant="contained">Drugs & Alcohol</Button>
               <Button variant="contained">Vilolence against women</Button>
@@ -98,7 +71,7 @@ export function MainForm(users, setUsers) {
               <Button variant="contained">Cold Weather Support</Button>
               <Button variant="contained">Criminal Justic</Button>
             </div>
-          </div>
+          </div> */}
         </div>
       </form>
     </div>
