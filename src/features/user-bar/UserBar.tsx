@@ -13,10 +13,10 @@ export function UserBar() {
           Users
         </Typography>
         <Stack spacing={2} direction="column">
-          <Button variant="contained">Contained</Button>
-          <Button variant="contained">Contained</Button>
-          <Button variant="contained">Contained</Button>
-          <Button variant="contained">Contained</Button>
+          <Button variant="contained">JH</Button>
+          <Button variant="contained">TC</Button>
+          <Button variant="contained">KM</Button>
+          <Button variant="contained">IL</Button>
         </Stack>
       </Box>
   );
