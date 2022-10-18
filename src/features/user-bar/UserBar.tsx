@@ -1,17 +1,23 @@
-import styles from './UserBar.module.css';
+import * as React from 'react';
+import Paper from '@mui/material/Paper';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+
 
 export function UserBar() {
-
-
   return (
-      <div className={styles.userbar}>
-           <h1>Users</h1>
-           <ul>
-            <li>user 1</li>
-            <li>user 2</li>
-            <li>user 3</li>
-            <li>user 4</li>
-           </ul>
-      </div>
+      <Box sx={{ width: '100%', maxWidth: 300, padding: '0 40px' }}>
+        <Typography variant="h1" gutterBottom>
+          Users
+        </Typography>
+        <Stack spacing={2} direction="column">
+          <Button variant="contained">Contained</Button>
+          <Button variant="contained">Contained</Button>
+          <Button variant="contained">Contained</Button>
+          <Button variant="contained">Contained</Button>
+        </Stack>
+      </Box>
   );
 }
